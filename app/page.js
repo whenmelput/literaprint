@@ -1,126 +1,258 @@
 export default function Home() {
+
   return (
     <main className="bg-black text-white min-h-screen">
 
       {/* Navbar */}
-      <nav className="flex justify-between p-5 bg-gray-900">
+      <nav className="flex justify-between items-center p-5 bg-gray-900">
+
         <h1 className="text-2xl font-bold text-cyan-400">
           LiteraPrint
         </h1>
 
         <div className="flex gap-5">
-          <a href="#layanan">Layanan</a>
-          <a href="#harga">Harga</a>
-          <a href="#kontak">Kontak</a>
+
+          <a href="#layanan">
+            Layanan
+          </a>
+
+          <a href="#harga">
+            Harga
+          </a>
+
+          <a href="#kontak">
+            Kontak
+          </a>
+
         </div>
+
       </nav>
 
       {/* Banner */}
-      <section className="text-center py-20">
+
+      <section className="text-center py-20 px-5">
+
         <h1 className="text-5xl font-bold text-cyan-400">
+
           LiteraPrint
+
         </h1>
 
-        <p className="mt-5 text-xl">
-          Print • Fotokopi • Scan • Jasa Ketik • BPJS
+        <p className="mt-5 text-xl text-gray-300">
+
+          Solusi Print • Fotokopi • Scan • Jasa Ketik • Layanan BPJS
+
         </p>
 
-        <button
-          className="bg-green-500 px-6 py-3 rounded mt-6"
+        <a
+
+          href="https://wa.me/6281331176953"
+          target="_blank"
+
+          className="
+          bg-green-500
+          hover:bg-green-600
+          px-6
+          py-3
+          rounded-lg
+          inline-block
+          mt-8
+          font-bold
+          "
+
         >
+
           Hubungi WhatsApp
-        </button>
+
+        </a>
+
       </section>
+
 
       {/* Layanan */}
+
       <section
         id="layanan"
-        className="p-10 bg-gray-900"
+        className="bg-gray-900 p-10"
       >
-        <h2 className="text-3xl font-bold">
+
+        <h2 className="text-3xl font-bold text-cyan-400">
+
           Layanan Kami
+
         </h2>
 
-        <div className="grid grid-cols-2 gap-5 mt-5">
+        <div className="grid md:grid-cols-3 gap-5 mt-8">
 
-          <div>📄 Cetak Dokumen</div>
+          <div className="bg-black p-5 rounded">
 
-          <div>📚 Fotokopi</div>
+            📄 Cetak Dokumen
 
-          <div>🖨️ Print Warna</div>
+          </div>
 
-          <div>⌨️ Jasa Ketik</div>
+          <div className="bg-black p-5 rounded">
 
-          <div>📠 Scan Dokumen</div>
+            📚 Fotokopi
 
-          <div>🏥 Layanan BPJS</div>
+          </div>
+
+          <div className="bg-black p-5 rounded">
+
+            🖨️ Print Warna
+
+          </div>
+
+          <div className="bg-black p-5 rounded">
+
+            📠 Scan Dokumen
+
+          </div>
+
+          <div className="bg-black p-5 rounded">
+
+            ⌨️ Jasa Ketik
+
+          </div>
+
+          <div className="bg-black p-5 rounded">
+
+            🏥 Layanan BPJS
+
+          </div>
 
         </div>
+
       </section>
 
+
       {/* Harga */}
+
       <section
         id="harga"
         className="p-10"
       >
-        <h2 className="text-3xl font-bold">
+
+        <h2 className="text-3xl font-bold text-cyan-400">
+
           Daftar Harga
+
         </h2>
 
-        <div className="mt-5">
+        <div className="mt-6 space-y-3">
 
-          <p>Print Hitam Putih : Rp500</p>
+          <p>
 
-          <p>Print Warna : Rp750</p>
+            Print Hitam Putih : Rp500 / lembar
 
-          <p>Fotokopi : Rp300</p>
+          </p>
 
-          <p>Scan Dokumen : Rp1.000</p>
+          <p>
+
+            Print Warna : Rp750 / lembar
+
+          </p>
+
+          <p>
+
+            Fotokopi : Rp300 / lembar
+
+          </p>
+
+          <p>
+
+            Scan Dokumen : Rp1.000
+
+          </p>
 
         </div>
+
       </section>
+
 
       {/* Testimoni */}
-      <section className="p-10 bg-gray-900">
 
-        <h2 className="text-3xl font-bold">
-          Testimoni
+      <section
+        className="bg-gray-900 p-10"
+      >
+
+        <h2 className="text-3xl font-bold text-cyan-400">
+
+          Testimoni Pelanggan
+
         </h2>
 
-        <p className="mt-5">
-          ⭐⭐⭐⭐⭐
-          "Pelayanan cepat dan ramah"
-        </p>
+        <div className="mt-6 space-y-5">
 
-        <p>
-          ⭐⭐⭐⭐⭐
-          "Print tugas kuliah jadi mudah"
-        </p>
+          <div>
+
+            ⭐⭐⭐⭐⭐
+
+            "Pelayanan cepat dan ramah."
+
+          </div>
+
+          <div>
+
+            ⭐⭐⭐⭐⭐
+
+            "Print tugas kuliah jadi lebih mudah."
+
+          </div>
+
+        </div>
 
       </section>
 
+
       {/* Kontak */}
+
       <section
         id="kontak"
         className="p-10 text-center"
       >
 
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-bold text-cyan-400">
+
           Hubungi Kami
+
         </h2>
 
-        <p>📍 Semarang</p>
+        <p className="mt-5">
 
-        <p>📞 081331176953</p>
+          📍 Semarang
 
-        <button
-          className="bg-green-500 px-6 py-3 rounded mt-5"
+        </p>
+
+        <p>
+
+          📞 081331176953
+
+        </p>
+
+        <a
+
+          href="https://wa.me/62813311776953"
+          target="_blank"
+
+          className="
+          bg-green-500
+          hover:bg-green-600
+          px-6
+          py-3
+          rounded-lg
+          inline-block
+          mt-5
+          "
+
         >
-          WhatsApp
-        </button>
+
+          Chat WhatsApp
+
+        </a>
 
       </section>
 
     </main>
   )
+
 }
