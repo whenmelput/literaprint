@@ -219,7 +219,7 @@ export default function Home() {
 
         <p className="mt-5">
 
-          📍 Semarang
+          📍 Umbul Sari Mijen RT 03 RW 01, Kota Semarang 
 
         </p>
 
